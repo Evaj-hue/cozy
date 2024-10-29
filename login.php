@@ -11,18 +11,18 @@
 <body>
   <div class="wrapper">
     <div class="title"><span>CozyRack Login</span></div>
-    <form action="authenticate.php" method="post">
+    <form action="authenticate.php" method="post" >
       <div class="row">
         <i class="fas fa-user"></i>
-        <input type="text" placeholder="Email" required />
+        <input type="text" placeholder="Email" required name="email"/>
       </div>
       <div class="row">
         <i class="fas fa-lock"></i>
-        <input type="password" placeholder="Password" required />
+        <input type="password" placeholder="Password" name="password" required />
       </div>
       
       <div class="row button">
-        <input type="submit" value="Login" />
+        <input type="submit" value="Login" name="login" />
       </div>
       <div class="signup-link">Not a member? <a href="registration.php">Signup now</a></div>
     </form>
