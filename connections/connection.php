@@ -13,5 +13,7 @@ function connection() {
     } else {
         return $con;
     }
+
+   
 }
 ?>
