@@ -1,12 +1,9 @@
-
-
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>Admin Dashboard</title>
+    <title>Products board</title>
 
     <!-- Montserrat Font -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -42,7 +39,7 @@
       <aside id="sidebar">
         <div class="sidebar-title">
           <div class="sidebar-brand">
-            <span class="material-icons-outlined">shopping_cart</span> COZY Rack 
+            <span class="material-icons-outlined">shopping_cart</span> STORE
           </div>
           <span class="material-icons-outlined" onclick="closeSidebar()">close</span>
         </div>
@@ -69,7 +66,6 @@
               <span class="material-icons-outlined">poll</span> Reports
             </a>
           </li>
-          
         </ul>
       </aside>
       <!-- End Sidebar -->
@@ -78,65 +74,21 @@
       <main class="main-container">
         <div class="main-title">
 		
-        <h2>DASHBOARD</h2>
+        <h2>PRODUCTS</h2>
    		
         </div>
 
         <div class="main-cards">
 
-          <div class="card">
+         <div class="card">
             <div class="card-inner">
               <h3>PRODUCTS</h3>
               <span class="material-icons-outlined">inventory_2</span>
             </div>
             <h1>249</h1>
-          </div>
-
-		  <div class="card">
-   		 <div class="card-inner">
-       	 <h3>ADMINS</h3>
-        <span class="material-icons-outlined">groups</span>
-    		</div>
-				<?php
-				include_once("connections/connection.php"); // Ensure this includes and initializes $con
-				$con = connection(); // Initialize $con
-				// The query to count the number of admin records
-				$dash_admin_query = "SELECT * from admins";
-				$dash_admin_query_run = mysqli_query($con,$dash_admin_query);
-
-				if($admin_total = mysqli_num_rows($dash_admin_query_run))
-				{
-					echo '<h1>' . $admin_total . '</h1>';
-				} 
-				else{
-					echo '<h4>NO DATA FOUND</h4>';
-				}
-				?>
-			</div>
-
-          <div class="card">
-            <div class="card-inner">
-              <h3>Rack 1</h3>
-              <span class="material-icons-outlined">storage</span>
-            </div>
-            <h1>000</h1>
-          </div>
-
+         </div>
         </div>
 
-        <div class="charts">
-
-          <div class="charts-card">
-            <h2 class="chart-title">________</h2>
-            <div id="bar-chart"></div>
-          </div>
-
-          <div class="charts-card">
-            <h2 class="chart-title">________</h2>
-            <div id="area-chart"></div>
-          </div>
-
-        </div>
       </main>
       <!-- End Main -->
 
