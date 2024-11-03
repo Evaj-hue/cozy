@@ -58,27 +58,12 @@
           </li>
           <li class="sidebar-list-item">
             <a href="#" target="_blank">
-              <span class="material-icons-outlined">category</span> Categories
-            </a>
-          </li>
-          <li class="sidebar-list-item">
-            <a href="#" target="_blank">
               <span class="material-icons-outlined">group</span> Admins
             </a>
           </li>
           <li class="sidebar-list-item">
             <a href="#" target="_blank">
-              <span class="material-icons-outlined">fact_check</span> Inventory
-            </a>
-          </li>
-          <li class="sidebar-list-item">
-            <a href="#" target="_blank">
               <span class="material-icons-outlined">poll</span> Reports
-            </a>
-          </li>
-          <li class="sidebar-list-item">
-            <a href="#" target="_blank">
-              <span class="material-icons-outlined">settings</span> Settings
             </a>
           </li>
         </ul>

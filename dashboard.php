@@ -42,7 +42,7 @@
       <aside id="sidebar">
         <div class="sidebar-title">
           <div class="sidebar-brand">
-            <span class="material-icons-outlined">shopping_cart</span> STORE
+            <span class="material-icons-outlined">shopping_cart</span> COZY Rack 
           </div>
           <span class="material-icons-outlined" onclick="closeSidebar()">close</span>
         </div>
@@ -61,17 +61,7 @@
           </li>
           <li class="sidebar-list-item">
             <a href="#" target="_blank">
-              <span class="material-icons-outlined">category</span> Categories
-            </a>
-          </li>
-          <li class="sidebar-list-item">
-            <a href="#" target="_blank">
               <span class="material-icons-outlined">group</span> Admins
-            </a>
-          </li>
-          <li class="sidebar-list-item">
-            <a href="#" target="_blank">
-              <span class="material-icons-outlined">fact_check</span> Inventory
             </a>
           </li>
           <li class="sidebar-list-item">
@@ -79,11 +69,7 @@
               <span class="material-icons-outlined">poll</span> Reports
             </a>
           </li>
-          <li class="sidebar-list-item">
-            <a href="#" target="_blank">
-              <span class="material-icons-outlined">settings</span> Settings
-            </a>
-          </li>
+          
         </ul>
       </aside>
       <!-- End Sidebar -->
@@ -130,10 +116,10 @@
 
           <div class="card">
             <div class="card-inner">
-              <h3>ALERTS</h3>
-              <span class="material-icons-outlined">notification_important</span>
+              <h3>Rack 1</h3>
+              <span class="material-icons-outlined">storage</span>
             </div>
-            <h1>56</h1>
+            <h1>000</h1>
           </div>
 
         </div>
@@ -141,12 +127,12 @@
         <div class="charts">
 
           <div class="charts-card">
-            <h2 class="chart-title">Top 5 Products</h2>
+            <h2 class="chart-title">________</h2>
             <div id="bar-chart"></div>
           </div>
 
           <div class="charts-card">
-            <h2 class="chart-title">Purchase and Sales Orders</h2>
+            <h2 class="chart-title">________</h2>
             <div id="area-chart"></div>
           </div>
 
