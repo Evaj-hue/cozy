@@ -127,12 +127,12 @@
         <div class="charts">
 
           <div class="charts-card">
-            <h2 class="chart-title">________</h2>
+            <h2 class="chart-title">SAMPLE </h2>
             <div id="bar-chart"></div>
           </div>
 
           <div class="charts-card">
-            <h2 class="chart-title">________</h2>
+            <h2 class="chart-title">SAMPLE</h2>
             <div id="area-chart"></div>
           </div>
 
