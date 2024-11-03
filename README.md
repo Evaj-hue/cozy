@@ -7,3 +7,5 @@ WITH DB DONNECTION NA YAN di ko lang na add sa pag publish
 registration:
 ![image](https://github.com/user-attachments/assets/c6f4f914-e556-43cf-9fb7-1f79aa7383f0)
 
+sample dashboard: 
+![image](https://github.com/user-attachments/assets/8a48bba6-1b56-45be-8a9e-654d20e6974a)
