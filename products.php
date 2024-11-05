@@ -84,6 +84,11 @@ if (!$result) {
               <span class="material-icons-outlined">poll</span> Reports
             </a>
           </li>
+          <li class ="sidebar-list-item">
+          <a href="logout.php" class="logout-link">
+            <span class="material-icons-outlined">logout</span>
+            <span class="nav-text">Logout</span>
+          </a>
         </ul>
       </aside>
       <!-- End Sidebar -->
@@ -141,6 +146,7 @@ if (!$result) {
           <th>Category</th>
          <th>Shelf</th>
           <th>Stock</th>  
+
 
          <th>Actions</th>
         </tr>
