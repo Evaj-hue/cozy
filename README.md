@@ -1,11 +1,24 @@
 ------ LOGIN AND REGISTRATION PAGE------ 
 
-NAGHAHANAP PA ME DASHBOARD NA TEMPLATE >< 
-WITH DB DONNECTION NA YAN di ko lang na add sa pag publish
-![image](https://github.com/user-attachments/assets/9705280a-27fd-4866-9f37-132a38df2ceb)
+logging activty feature nalang kulang : 
+
+LOGIN MENU: ![image](https://github.com/user-attachments/assets/7cb01aec-bd58-4284-870f-c91fd62de586)
+
+
 
 registration:
-![image](https://github.com/user-attachments/assets/c6f4f914-e556-43cf-9fb7-1f79aa7383f0)
+![image](https://github.com/user-attachments/assets/4a48dbdf-ff5e-45a4-b477-0c3df002302c)
+
 
 sample dashboard: 
-![image](https://github.com/user-attachments/assets/8a48bba6-1b56-45be-8a9e-654d20e6974a)
+![image](https://github.com/user-attachments/assets/57d3f40a-08e7-49cd-98fb-84706a37535b)
+products menu: 
+![image](https://github.com/user-attachments/assets/ae27b510-c667-42be-a935-fb0ad3558988)
+add new product: 
+![image](https://github.com/user-attachments/assets/39f4f6bd-4718-41c2-bb4d-d95516fa38d9)
+edit products: 
+![image](https://github.com/user-attachments/assets/f78237e0-3526-4162-95d4-e24c1434a660)
+
+
+
+
