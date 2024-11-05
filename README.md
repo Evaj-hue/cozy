@@ -19,6 +19,16 @@ add new product:
 edit products: 
 ![image](https://github.com/user-attachments/assets/f78237e0-3526-4162-95d4-e24c1434a660)
 
+sql import table design: 
+![image](https://github.com/user-attachments/assets/e373cd0f-3a71-424e-9310-db82defcf3a7)
+
+table name : (admins) table:
+![image](https://github.com/user-attachments/assets/1bf782a4-cb89-4743-92bd-90e3e46ee85a)
+
+table name : (rack_product) table:
+![image](https://github.com/user-attachments/assets/28b78d26-f3f8-4293-9a56-48c54ec92e93)
+
+
 
 
 
