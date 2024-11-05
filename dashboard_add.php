@@ -53,10 +53,10 @@ if (isset($_POST['submit'])){
           <span class="material-icons-outlined">menu</span>
         </div>
         <div class="header-left">
-        <h2>PRODUCTS MENU</h2>
+         
         </div>
-        <div class="header-right">
-        </div>
+        <div class="header-right"></div>
+   
       </header>
       <!-- End Header -->
 

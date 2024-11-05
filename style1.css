@@ -70,12 +70,27 @@ body {
     padding: 0;
     margin-top: 15px;
     list-style-type: none;
+   
   }
   
   .sidebar-list-item {
     padding: 20px 20px 20px 20px;
     font-size: 18px;
+   
   }
+  .logout-link {
+    padding: 20px; /* Maintain consistent padding */
+    display: flex; /* Align icon and text horizontally */
+    align-items: center; /* Center align items */
+    color: #9e9ea4; /* Match the text color */
+    text-decoration: none; /* Remove underline from the link */
+    margin-top: auto; /* Push the logout button to the bottom */
+}
+
+.logout-link:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Change background on hover */
+  color: #ffffff; /* Change color on hover */
+}
   
   .sidebar-list-item:hover {
     background-color: rgba(255, 255, 255, 0.2);
@@ -177,6 +192,13 @@ body {
     justify-content: center;
   }
   
+
+  /*logout button */
+  
+
+
+
+
   /* ---------- MEDIA QUERIES ---------- */
   
   /* Medium <= 992px */
