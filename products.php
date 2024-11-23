@@ -75,12 +75,12 @@ if (!$result) {
             </a>
           </li>
           <li class="sidebar-list-item">
-            <a href="#" target="_blank">
+            <a href="admin.php">
               <span class="material-icons-outlined">group</span> Admins
             </a>
           </li>
           <li class="sidebar-list-item">
-            <a href="rack.php">
+            <a href="index.php">
               <span class="material-icons-outlined">monitor_weight</span> Racks
             </a>
           </li>

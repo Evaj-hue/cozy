@@ -52,7 +52,7 @@
             </a>
           </li>
           <li class="sidebar-list-item">
-            <a href="rack.php" target="_blank">
+            <a href="index.php" target="_blank">
               <span class="material-icons-outlined">monitor_weight</span> Racks
             </a>
           </li>
