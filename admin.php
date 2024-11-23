@@ -25,7 +25,7 @@
       <!-- Header -->
       <header class="header">
         <div class="menu-icon" onclick="openSidebar()">
-          <span class="material-icons-outlined">menu</span>
+          <span class="material-icons-outlined">Admin Users Page</span>
         </div>
         <div class="header-left">
          
@@ -59,7 +59,7 @@
             </a>
           </li>
           <li class="sidebar-list-item">
-            <a href="admin.php">
+            <a href="admin.php" target="_blank">
               <span class="material-icons-outlined">group</span> Admins
             </a>
           </li>
@@ -83,13 +83,19 @@
       <main class="main-container">
         <div class="main-title">
 		
-        <h2>Login Logs</h2>
+        <h2>DASHBOARD</h2>
    		
         </div>
 
         <div class="main-cards">
 
-          
+          <div class="card">
+            <div class="card-inner">
+              <h3>PRODUCTS</h3>
+              <span class="material-icons-outlined">inventory_2</span>
+            </div>
+            <h1></h1>
+          </div>
 
 		  <div class="card">
    		 <div class="card-inner">
@@ -121,25 +127,24 @@
           </div>
         </div>
         </tbody>
-        <div class="main-container">
-   
-            <?php
+        <?php
 include_once("connections/connection.php"); // Include database connection
 $con = connection(); // Initialize database connection
 
-// Query to get admin records
-$dash_admin_query = "SELECT id, email, username FROM admins";
+// Query to get admin records with last login time
+$dash_admin_query = "SELECT id, email, username, last_login FROM admins";
 $dash_admin_query_run = mysqli_query($con, $dash_admin_query);
 ?>
-  
+
 <div class="table-data">
-<h3>USERS</h3>
+    <h2>Logs</h2>
     <table>
         <thead>
             <tr>
                 <th>ID</th>
                 <th>Email</th>
                 <th>Username</th>
+                <th>Last Login Time</th>
             </tr>
         </thead>
         <tbody>
@@ -148,15 +153,18 @@ $dash_admin_query_run = mysqli_query($con, $dash_admin_query);
             if (mysqli_num_rows($dash_admin_query_run) > 0) {
                 // Loop through each row and display the data
                 while ($row = mysqli_fetch_assoc($dash_admin_query_run)) {
+                    // Format the last login time as a readable date-time string
+                    $last_login = date('Y-m-d H:i:s', strtotime($row['last_login']));
                     echo "<tr>";
                     echo "<td>" . $row['id'] . "</td>";
                     echo "<td>" . $row['email'] . "</td>";
                     echo "<td>" . $row['username'] . "</td>";
+                    echo "<td>" . $last_login . "</td>";
                     echo "</tr>";
                 }
             } else {
                 // If no records found, display a message
-                echo "<tr><td colspan='3'>No data found</td></tr>";
+                echo "<tr><td colspan='4'>No data found</td></tr>";
             }
             ?>
         </tbody>
@@ -167,11 +175,9 @@ $dash_admin_query_run = mysqli_query($con, $dash_admin_query);
 // Close the database connection
 mysqli_close($con);
 ?>
-            </tbody>
-        </table>
-    </div>
-</div>  
-</main>
+
+            
+      </main>
       <!-- End Main -->
 
     </div>

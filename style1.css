@@ -193,7 +193,42 @@ body {
   }
   
 
-  /*logout button */
+  /*table css  */
+  /* Table Styles */
+/* Table Styles */
+.main-container .table-data table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: #2b3e50;
+  color: #f0f0f0;
+}
+
+.main-container .table-data th,
+.main-container .table-data td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #444;
+}
+
+.main-container .table-data th {
+  background-color: #263043;
+  color: #9e9ea4;
+  font-weight: 600;
+  font-size: 0.9em;
+  text-transform: uppercase;
+}
+
+.main-container .table-data tr:hover {
+  background-color: #334a63;
+}
+
+.main-container .table-data td {
+  font-size: 0.85em;
+  color: #e2e2e2;
+}
+
+
   
 
 

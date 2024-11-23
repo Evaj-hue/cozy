@@ -75,13 +75,13 @@ if (!$result) {
             </a>
           </li>
           <li class="sidebar-list-item">
-            <a href="#" target="_blank">
+            <a href="admin.php">
               <span class="material-icons-outlined">group</span> Admins
             </a>
           </li>
           <li class="sidebar-list-item">
-            <a href="#" target="_blank">
-              <span class="material-icons-outlined">poll</span> Reports
+            <a href="index.php">
+              <span class="material-icons-outlined">monitor_weight</span> Racks
             </a>
           </li>
           <li class ="sidebar-list-item">
@@ -103,7 +103,7 @@ if (!$result) {
               <h3>PRODUCTS</h3>
               <span class="material-icons-outlined">inventory_2</span>
             </div>
-            <h1>249</h1>
+            <h1>4</h1>
          </div>
         </div>
         <!-- table things -->
