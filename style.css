@@ -14,21 +14,22 @@ body {
   justify-content: center;
   height: 100vh;
   padding: 15px;
-  background: #1d2634;
+  background: #1d2634; /* Retained from original */
   overflow: hidden;
+  color: #9e9ea4; /* Updated text color */
 }
 
 .wrapper {
   max-width: 500px;
   width: 100%;
-  background: #fff;
+  background: #263043; /* Updated background color */
   border-radius: 5px;
-  box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.2); /* Slightly darker shadow */
 }
 
 .wrapper .title {
   height: 120px;
-  background: #e4a827;
+  background: #9e9ea4; /* Title color */
   border-radius: 5px 5px 0 0;
   color: #fff;
   font-size: 30px;
@@ -54,17 +55,17 @@ body {
   outline: none;
   padding-left: 70px;
   border-radius: 5px;
-  border: 1px solid lightgrey;
+  border: 1px solid #9e9ea4; /* Updated border color */
   font-size: 18px;
   transition: all 0.3s ease;
 }
 
 form .row input:focus {
-  border-color: #16a085;
+  border-color: #16a085; /* Focus color retained */
 }
 
 form .row input::placeholder {
-  color: #999;
+  color: #999; /* Placeholder color */
 }
 
 .wrapper form .row i {
@@ -73,8 +74,8 @@ form .row input::placeholder {
   height: 100%;
   color: #fff;
   font-size: 22px;
-  background: #a05616;
-  border: 1px solid #a05616;
+  background: #9e9ea4; /* Updated icon background color */
+  border: 1px solid #9e9ea4; /* Updated border color */
   border-radius: 5px 0 0 5px;
   display: flex;
   align-items: center;
@@ -86,7 +87,7 @@ form .row input::placeholder {
 }
 
 .wrapper form .pass a {
-  color: #16a085;
+  color: #9e9ea4; /* Link color */
   font-size: 17px;
   text-decoration: none;
 }
@@ -101,13 +102,13 @@ form .row input::placeholder {
   font-size: 20px;
   font-weight: 500;
   padding-left: 0px;
-  background: #a05616;
-  border: 1px solid #a05616;
+  background: #9e9ea4; /* Button background color */
+  border: 1px solid #9e9ea4; /* Button border color */
   cursor: pointer;
 }
 
 form .button input:hover {
-  background: #12876f;
+  background: #12876f; /* Hover color retained */
 }
 
 .wrapper form .signup-link {
@@ -117,11 +118,10 @@ form .button input:hover {
 }
 
 .wrapper form .signup-link a {
-  color: #16a085;
+  color: #16a085; /* Updated link color */
   text-decoration: none;
 }
 
 form .signup-link a:hover {
   text-decoration: underline;
 }
-

@@ -1,12 +1,9 @@
-
-
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>Admin Dashboard</title>
+    <title>Racks Table</title>
 
     <!-- Montserrat Font -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -18,8 +15,6 @@
     <link rel="stylesheet" href="style1.css">
   </head>
   <body>
-  
-
     <div class="grid-container">
 
       <!-- Header -->
@@ -27,13 +22,8 @@
         <div class="menu-icon" onclick="openSidebar()">
           <span class="material-icons-outlined">menu</span>
         </div>
-        <div class="header-left">
-         
-        </div>
-        <div class="header-right">
-          
-      </div>
-   
+        <div class="header-left"></div>
+        <div class="header-right"></div>
       </header>
       <!-- End Header -->
 
@@ -41,17 +31,15 @@
       <aside id="sidebar">
         <div class="sidebar-title">
           <div class="sidebar-brand">
-            <span class="material-icons-outlined">shopping_cart</span> COZY Rack 
+            <span class="material-icons-outlined">shopping_cart</span> COZY Rack
           </div>
           <span class="material-icons-outlined" onclick="closeSidebar()">close</span>
         </div>
-
         <ul class="sidebar-list">
-			<li class="sidebar-list-item">
+          <li class="sidebar-list-item">
             <a href="dashboard.php">
-                <span class="material-icons-outlined">dashboard</span> Dashboard
+              <span class="material-icons-outlined">dashboard</span> Dashboard
             </a>
-        	</li>
           </li>
           <li class="sidebar-list-item">
             <a href="products.php">
@@ -64,17 +52,16 @@
             </a>
           </li>
           <li class="sidebar-list-item">
-            <a href="rack.php">
+            <a href="rack.php" target="_blank">
               <span class="material-icons-outlined">monitor_weight</span> Racks
             </a>
           </li>
+          <li class="sidebar-list-item">
+            <a href="logout.php" class="logout-link">
+              <span class="material-icons-outlined">logout</span>
+              <span class="nav-text">Logout</span>
+            </a>
           </li>
-          <li class ="sidebar-list-item">
-          <a href="logout.php" class="logout-link">
-            <span class="material-icons-outlined">logout</span>
-            <span class="nav-text">Logout</span>
-          </a>
-        
         </ul>
       </aside>
       <!-- End Sidebar -->
@@ -82,13 +69,9 @@
       <!-- Main -->
       <main class="main-container">
         <div class="main-title">
-		
-        <h2>DASHBOARD</h2>
-   		
+          <h2>DASHBOARD</h2>
         </div>
-
         <div class="main-cards">
-
           <div class="card">
             <div class="card-inner">
               <h3>PRODUCTS</h3>
@@ -96,28 +79,6 @@
             </div>
             <h1></h1>
           </div>
-
-		  <div class="card">
-   		 <div class="card-inner">
-       	 <h3>ADMINS</h3>
-        <span class="material-icons-outlined">groups</span>
-    		</div>
-				<?php
-				include_once("connections/connection.php"); // Ensure this includes and initializes $con
-				$con = connection(); // Initialize $con
-				// The query to count the number of admin records
-				$dash_admin_query = "SELECT * from admins";
-				$dash_admin_query_run = mysqli_query($con,$dash_admin_query);
-
-				if($admin_total = mysqli_num_rows($dash_admin_query_run))
-				{
-					echo '<h1>' . $admin_total . '</h1>';
-				} 
-				else{
-					echo '<h4>NO DATA FOUND</h4>';
-				}
-				?>
-			</div>
           <div class="card">
             <div class="card-inner">
               <h3>Rack 1</h3>
@@ -126,27 +87,25 @@
             <h1>000</h1>
           </div>
         </div>
-        </tbody>
-        <div class="main-container">
-    <div class="table-data">
-        <h2>Logs</h2>
-        <table>
+        <div class="table-data">
+          <h2>Logs</h2>
+          <table>
             <thead>
-                <tr>
-                    <th>ID</th>
-                    <th>Product Name</th>
-                    <th>Shelf</th>
-                    <th>Stock</th>
-                </tr>
+              <tr>
+                <th>ID</th>
+                <th>Weight</th>
+                <th>Status</th>
+                <th>Date</th>
+                <th>Time</th>
+                <th>Item Count</th>
+                <th>Timestamp</th>
+              </tr>
             </thead>
             <tbody>
-                <!-- Table body is empty, data can be dynamically added later -->
+              <!-- Add dynamic table rows here -->
             </tbody>
-        </table>
-    </div>
-</div>
-
-            
+          </table>
+        </div>
       </main>
       <!-- End Main -->
 
